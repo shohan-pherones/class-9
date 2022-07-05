@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        width: 100%;
+        height: 50vh;
+        background-color: crimson;
+        padding: 50px;
+      }
+      .wrapper:hover .box {
+        transform: translateX(500px);
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: mediumturquoise;
+        transition: transform 1s cubic-bezier(0.65, -1.13, 0.3, 2.18) 5s;
+      }
+      /*
+      ease - slow fast slow
+      ease-in - slow fast
+      ease-out fast slow
+      linear same speed
+      */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
